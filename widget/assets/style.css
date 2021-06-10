@@ -1,0 +1,37 @@
+.widget-list {
+  font-family: sans-serif;
+  width: fit-content;
+}
+.widget-header-title {
+  max-width: 650px;
+
+  border-bottom: 1px solid black;
+}
+.widget-header-title :first-child {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+}
+.widget-header-title p {
+  margin-bottom: 5px;
+  font-size: 10px;
+}
+
+.widget-list-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px 15px;
+  max-width: 650px;
+}
+
+.widget-header-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 400px) {
+  .widget-header-title {
+    text-align: center;
+    flex-direction: column;
+  }
+}
